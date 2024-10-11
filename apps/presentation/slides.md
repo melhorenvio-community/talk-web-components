@@ -1,9 +1,9 @@
 ---
 theme: dracula
-title: "CSS trends: a not-so brief recap"
-author: Leonardo Adamoli
-keywords: css,trending,dev,guide
-exportFilename: modern-css-a-practical-guide-exported
+title: "Exploring Web Components and it's possibilities"
+author: Leonardo Adamoli, Diego Rocha
+keywords: web-components,dev,guide
+exportFilename: exploring-web-components-and-its-possibilities
 class: text-center
 transition: slide-left
 hideInToc: true
@@ -12,13 +12,11 @@ hideInToc: true
 <!-- Intro -->
 <section>
   <h1 class="section-title" v-motion-slide-right>
-    CSS trends
+    Web Components
   </h1>
 
-  <small 
-    class="inline-flex items-end gap-2 text-green" v-motion-slide-left>
-    <i>a <s>not-so</s> brief recap</i>
-    <fluent-emoji-nail-polish-light class="w-[30px] h-[30px]" />
+  <small class="inline-flex items-end gap-2 italic text-green" v-motion-slide-left>
+    uma introdução abrangente em suas possibilidades
   </small>
 </section>
 

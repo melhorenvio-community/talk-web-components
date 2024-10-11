@@ -1,24 +1,17 @@
 <template>
-  <BarBottom title="Leonardo Adamoli | Front-end Developer - @melhorenvio" v-motion-fade>
-    <BarBottomItem 
-      text="@leoadamo" 
+  <BarBottom title="Leonardo Adamoli, Diego Rocha | Front-end Developers @melhorenvio" v-motion-fade>
+    <BarBottomItem
+      text="@leoadamo"
       url="https://github.com/leoadamo"
     >
       <carbon:logo-github />
     </BarBottomItem>
 
-    <BarBottomItem 
-      text="@_leoadamo" 
-      url="https://twitter.com/_leoadamo"
+    <BarBottomItem
+      text="@diegorocha1986"
+      url="https://github.com/diegorocha1986"
     >
-      <carbon:logo-twitter />
-    </BarBottomItem>
-
-    <BarBottomItem 
-      text="leosadamo" 
-      url="https://www.linkedin.com/in/leosadamo/"
-    >
-      <carbon:logo-linkedin />
+      <carbon:logo-github />
     </BarBottomItem>
   </BarBottom>
 </template>

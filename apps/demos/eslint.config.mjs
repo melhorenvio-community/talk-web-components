@@ -14,15 +14,5 @@ export default antfu({
       "always",
     ],
     /** END STYLE */
-  },
-
-  ignores: [],
-
-  formatters: {
-    html: true,
-    css: true,
-  },
-
-  jsonc: false,
-  yaml: false,
+  }
 });

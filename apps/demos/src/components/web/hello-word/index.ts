@@ -1,5 +1,3 @@
-"use-strict";
-
 (function () {
   class HelloWorld extends HTMLElement {
     constructor() {
@@ -27,9 +25,9 @@
 
     // gathering data from element attributes
     get content() {
-      return this.getAttribute("content") || "";
+      return this.getAttribute("content") ?? "";
     }
   }
 
-  customElements.define("hello-world", HelloWorld);
+  customElements.define("web-hello-world", HelloWorld);
 })();

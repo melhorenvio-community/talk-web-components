@@ -1,11 +1,7 @@
-'use-strict';
+"use-strict";
 
-(function() {
-  class HelloWorld extents HTMLElement {
-    constructor() {
-      super();
-    }
-  }
+(function () {
+  class HelloWorld extends HTMLElement {}
 
-  customElements.define('hello-world', HelloWorld);
-});
+  customElements.define("hello-world", HelloWorld);
+})();

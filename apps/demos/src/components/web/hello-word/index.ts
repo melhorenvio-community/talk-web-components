@@ -5,25 +5,22 @@
 
       const shadow = this.attachShadow({ mode: "open" });
 
-      const helloWorldContainer = document.createElement("p");
+      const root = document.createElement("p");
 
-      const content = this.content;
-
-      helloWorldContainer.classList.add("hello-world");
-      helloWorldContainer.innerHTML = `
+      root.classList.add("hello-world");
+      root.innerHTML = `
         <style>
           .hello-world {
             color: crimson;
           }
         </style>
 
-        ${content}
+        ${this.content}
       `;
 
-      shadow.appendChild(helloWorldContainer);
+      shadow.appendChild(root);
     }
 
-    // gathering data from element attributes
     get content() {
       return this.getAttribute("content") ?? "";
     }

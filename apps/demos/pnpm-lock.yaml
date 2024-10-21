@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@melhorenvio/unbox-theme':
+        specifier: ^0.3.2
+        version: 0.3.2(autoprefixer@10.4.20(postcss@8.4.47))(postcss@8.4.47)(tailwindcss@3.4.14)
       vue:
         specifier: ^3.5.11
         version: 3.5.12(typescript@5.5.4)
@@ -476,6 +479,12 @@ packages:
     resolution: {integrity: sha512-vH9PiIMMwvhCx31Af3HiGzsVNULDbyVkHXwlemn/B0TFj/00ho3y55efXrUZTfQipxoHC5u4xq6zblww1zm1Ig==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@headlessui/tailwindcss@0.2.1':
+    resolution: {integrity: sha512-2+5+NZ+RzMyrVeCZOxdbvkUSssSxGvcUxphkIfSVLpRiKsj+/63T2TOL9dBYMXVfj/CGr6hMxSRInzXv6YY7sA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      tailwindcss: ^3.0
+
   '@humanfs/core@0.19.0':
     resolution: {integrity: sha512-2cbWIHbZVEweE853g8jymffCA+NCMiuqeECeBBLm8dg2oFdjuGJhgN4UAbI+6v0CKbbhvtXA4qV8YR5Ji86nmw==}
     engines: {node: '>=18.18.0'}
@@ -513,6 +522,16 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@melhorenvio/unbox-theme@0.3.2':
+    resolution: {integrity: sha512-o8FXuweaNtBQrTcFZM6c7OTpJ3G12OeEepUtImYc1fknQMgANdn2/OSA5Iqfsdr9LIjPGWDdYg7G2SRWbpZ5eg==, tarball: https://npm.pkg.github.com/download/@melhorenvio/unbox-theme/0.3.2/f1aa4f18e235e8fc5d63e971ee84645c820061a4}
+
+  '@mertasan/tailwindcss-variables@2.7.0':
+    resolution: {integrity: sha512-rKPhxi/0r6XWP0+OjPmsfrloX/TtQmvONj2Pr3Nl8BNBznQVP3M9sphguDBUDC0AiKYx2xgup3XzAhlIDLPLIA==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      autoprefixer: ^10.0.2
+      postcss: ^8.0.9
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1608,6 +1627,9 @@ packages:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
 
+  lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
@@ -2209,6 +2231,15 @@ packages:
   synckit@0.9.2:
     resolution: {integrity: sha512-vrozgXDQwYO72vHjUb/HnFbQx1exDjoKzqx23aXEg2a9VIg2TSFZ8FmeZpTjUCFMYw7mpX4BE2SFu8wI7asYsw==}
     engines: {node: ^14.18.0 || >=16.0.0}
+
+  tailwind-scrollbar-hide@1.1.7:
+    resolution: {integrity: sha512-X324n9OtpTmOMqEgDUEA/RgLrNfBF/jwJdctaPZDzB3mppxJk7TLIDmOreEDm1Bq4R9LSPu4Epf8VSdovNU+iA==}
+
+  tailwind-scrollbar@3.1.0:
+    resolution: {integrity: sha512-pmrtDIZeHyu2idTejfV59SbaJyvp1VRjYxAjZBH0jnyrPRo6HL1kD5Glz8VPagasqr6oAx6M05+Tuw429Z8jxg==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: 3.x
 
   tailwindcss@3.4.14:
     resolution: {integrity: sha512-IcSvOcTRcUtQQ7ILQL5quRDg7Xs93PdJEk1ZLbhhvJc7uj/OAhYOnruEiwnGgBvUtaUAJ8/mhSw1o8L2jCiENA==}
@@ -2898,6 +2929,10 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
+  '@headlessui/tailwindcss@0.2.1(tailwindcss@3.4.14)':
+    dependencies:
+      tailwindcss: 3.4.14
+
   '@humanfs/core@0.19.0': {}
 
   '@humanfs/node@0.16.5':
@@ -2934,6 +2969,24 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@melhorenvio/unbox-theme@0.3.2(autoprefixer@10.4.20(postcss@8.4.47))(postcss@8.4.47)(tailwindcss@3.4.14)':
+    dependencies:
+      '@headlessui/tailwindcss': 0.2.1(tailwindcss@3.4.14)
+      '@mertasan/tailwindcss-variables': 2.7.0(autoprefixer@10.4.20(postcss@8.4.47))(postcss@8.4.47)
+      lodash-es: 4.17.21
+      tailwind-scrollbar: 3.1.0(tailwindcss@3.4.14)
+      tailwind-scrollbar-hide: 1.1.7
+    transitivePeerDependencies:
+      - autoprefixer
+      - postcss
+      - tailwindcss
+
+  '@mertasan/tailwindcss-variables@2.7.0(autoprefixer@10.4.20(postcss@8.4.47))(postcss@8.4.47)':
+    dependencies:
+      autoprefixer: 10.4.20(postcss@8.4.47)
+      lodash: 4.17.21
+      postcss: 8.4.47
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -4098,6 +4151,8 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
+  lodash-es@4.17.21: {}
+
   lodash.merge@4.6.2: {}
 
   lodash@4.17.21: {}
@@ -4843,6 +4898,12 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.1.1
       tslib: 2.7.0
+
+  tailwind-scrollbar-hide@1.1.7: {}
+
+  tailwind-scrollbar@3.1.0(tailwindcss@3.4.14):
+    dependencies:
+      tailwindcss: 3.4.14
 
   tailwindcss@3.4.14:
     dependencies:

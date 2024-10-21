@@ -12,6 +12,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
+    "@melhorenvio/unbox-theme": "^0.3.2",
     "vue": "^3.5.11",
     "vue-router": "^4.4.5"
   },

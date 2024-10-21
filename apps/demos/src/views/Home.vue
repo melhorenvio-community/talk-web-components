@@ -1,6 +1,10 @@
 <template>
-  <web-hello-world content="I am a Web Component!" />
+  <base-layout>
+    <template #content>
+      <web-hello-world content="I am a Web Component!" />
 
-  <stencil-first-component />
-  <stencil-prop-component name="Juca" />
+      <stencil-first-component />
+      <stencil-prop-component name="Juca" />
+    </template>
+  </base-layout>
 </template>

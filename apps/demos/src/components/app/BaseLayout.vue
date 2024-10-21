@@ -4,9 +4,7 @@
 <template>
   <main>
     <header>
-      <slot name="heading">
-        <h1>Default heading content</h1>
-      </slot>
+      <slot name="heading" />
     </header>
 
     <section>
@@ -14,9 +12,7 @@
     </section>
 
     <footer>
-      <slot name="footer">
-        <p>Default footer content</p>
-      </slot>
+      <slot name="footer" />
     </footer>
   </main>
 </template>

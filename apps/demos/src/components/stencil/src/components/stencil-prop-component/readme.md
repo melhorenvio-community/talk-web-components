@@ -1,7 +1,5 @@
 # stencil-prop-component
 
-
-
 <!-- Auto Generated Below -->
 
 

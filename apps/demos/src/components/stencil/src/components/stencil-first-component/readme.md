@@ -1,7 +1,5 @@
 # stencil-first-component
 
-
-
 <!-- Auto Generated Below -->
 
 

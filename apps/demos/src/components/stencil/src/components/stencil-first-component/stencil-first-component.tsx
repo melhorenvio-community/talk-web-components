@@ -1,8 +1,9 @@
-import { Component, h } from '@stencil/core';
+import { Component, h } from "@stencil/core";
 
 @Component({
-  tag: 'stencil-first-component',
+  tag: "stencil-first-component",
 })
+
 export class StencilFirstComponent {
   render() {
     return (

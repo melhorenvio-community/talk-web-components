@@ -12,6 +12,7 @@
         <style>
           .hello-world {
             color: crimson;
+            margin: 0;
           }
         </style>
 

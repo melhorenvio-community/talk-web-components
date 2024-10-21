@@ -13,6 +13,13 @@ export default antfu({
       "error",
       "always",
     ],
+
+    "style/jsx-one-expression-per-line": [
+      "error",
+      {
+        allow: "non-jsx",
+      },
+    ],
     /** END STYLE */
-  }
+  },
 });

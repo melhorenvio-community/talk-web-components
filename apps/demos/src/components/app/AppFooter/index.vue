@@ -22,7 +22,9 @@ defineProps({
       py-2
       text-sm
       font-semibold
-      bg-primary-light
+      bg-gradient-to-r
+      from-primary-dark
+      to-primary-light
     "
   >
     <div class="flex items-center gap-4 text-left">

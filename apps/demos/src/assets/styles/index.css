@@ -1,3 +1,6 @@
+@import 'core/transitions.css';
+@import 'core/layout.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

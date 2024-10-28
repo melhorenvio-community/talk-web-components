@@ -7,7 +7,10 @@ withDefaults(defineProps<IAppHeadingProps>(), {
 </script>
 
 <template>
-  <component :is="level">
+  <component
+    :is="level"
+    class="text-xl font-bold"
+  >
     <slot />
   </component>
 

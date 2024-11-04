@@ -15,7 +15,7 @@ defineProps({
       flex
       justify-between
       items-center
-      absolute
+      fixed
       bottom-0
       left-0
       px-4

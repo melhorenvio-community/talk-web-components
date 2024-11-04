@@ -2,7 +2,8 @@
   <RouterView v-slot="{ Component }">
     <transition
       name="fade"
-      appear
+      mode="out-in"
+      class="relative"
     >
       <component :is="Component" />
     </transition>

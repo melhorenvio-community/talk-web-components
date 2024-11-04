@@ -1,0 +1,115 @@
+{
+  "examples": [
+    {
+      "id": "demo-01",
+      "category": "webcomponents",
+      "title": "Custom Elements",
+      "description": "Utilizando API nativa para construir nosso primeiro exemplo"
+    },
+
+    {
+      "id": "demo-02",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Utilizando o Stencil.js para construir nosso primeiro Stencil Element"
+    },
+
+    {
+      "id": "demo-03",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a passagem de props entre stencil elements"
+    },
+
+    {
+      "id": "demo-04",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando passagem de props obrigatórias"
+    },
+
+    {
+      "id": "demo-05",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a passagem de props booleanas com valor 'truthy'"
+    },
+
+    {
+      "id": "demo-06",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a passagem de props booleanas com valor 'falsy'"
+    },
+
+    {
+      "id": "demo-07",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a passagem de props booleanas sem valor inicial"
+    },
+
+    {
+      "id": "demo-08",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a passagem de props do tipo 'object'"
+    },
+
+    {
+      "id": "demo-09",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a passagem de props do tipo 'array'"
+    },
+
+    {
+      "id": "demo-10",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a validação de props"
+    },
+
+    {
+      "id": "demo-11",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a utilização de métodos públicos"
+    },
+
+    {
+      "id": "demo-12",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a utilização de métodos privados"
+    },
+
+    {
+      "id": "demo-13",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a utilização e controle de estado interno"
+    },
+
+    {
+      "id": "demo-14",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a emissão de eventos"
+    },
+
+    {
+      "id": "demo-15",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a escuta de eventos"
+    },
+
+    {
+      "id": "demo-16",
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Observando a atualização de props"
+    }
+  ]
+}

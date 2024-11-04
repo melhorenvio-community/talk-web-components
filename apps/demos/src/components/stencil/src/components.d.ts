@@ -5,19 +5,118 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { User } from "./components/05/05";
+export { User } from "./components/05/05";
 export namespace Components {
+    interface StencilArrayProp {
+        "users": string[];
+    }
+    interface StencilBooleanProp {
+        "checked": boolean;
+        "label": string;
+        "name": string;
+    }
+    interface StencilEmitEvent {
+    }
     interface StencilFirstComponent {
+    }
+    interface StencilInternalState {
+    }
+    interface StencilInternalStateReactive {
+        "updateTime": () => Promise<void>;
+    }
+    interface StencilListenEvent {
+    }
+    interface StencilObjectProp {
+        "user": User;
+    }
+    interface StencilPrivateMethod {
     }
     interface StencilPropComponent {
         "name": string;
     }
+    interface StencilPropValidation {
+        "name": string;
+    }
+    interface StencilPublicMethod {
+        "generateNumber": () => Promise<void>;
+    }
+    interface StencilRequiredProp {
+        "name": string;
+    }
+    interface StencilWatchProp {
+        "birthYear": number;
+    }
+}
+export interface StencilEmitEventCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLStencilEmitEventElement;
 }
 declare global {
+    interface HTMLStencilArrayPropElement extends Components.StencilArrayProp, HTMLStencilElement {
+    }
+    var HTMLStencilArrayPropElement: {
+        prototype: HTMLStencilArrayPropElement;
+        new (): HTMLStencilArrayPropElement;
+    };
+    interface HTMLStencilBooleanPropElement extends Components.StencilBooleanProp, HTMLStencilElement {
+    }
+    var HTMLStencilBooleanPropElement: {
+        prototype: HTMLStencilBooleanPropElement;
+        new (): HTMLStencilBooleanPropElement;
+    };
+    interface HTMLStencilEmitEventElementEventMap {
+        "timeUpdated": number;
+    }
+    interface HTMLStencilEmitEventElement extends Components.StencilEmitEvent, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLStencilEmitEventElementEventMap>(type: K, listener: (this: HTMLStencilEmitEventElement, ev: StencilEmitEventCustomEvent<HTMLStencilEmitEventElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLStencilEmitEventElementEventMap>(type: K, listener: (this: HTMLStencilEmitEventElement, ev: StencilEmitEventCustomEvent<HTMLStencilEmitEventElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLStencilEmitEventElement: {
+        prototype: HTMLStencilEmitEventElement;
+        new (): HTMLStencilEmitEventElement;
+    };
     interface HTMLStencilFirstComponentElement extends Components.StencilFirstComponent, HTMLStencilElement {
     }
     var HTMLStencilFirstComponentElement: {
         prototype: HTMLStencilFirstComponentElement;
         new (): HTMLStencilFirstComponentElement;
+    };
+    interface HTMLStencilInternalStateElement extends Components.StencilInternalState, HTMLStencilElement {
+    }
+    var HTMLStencilInternalStateElement: {
+        prototype: HTMLStencilInternalStateElement;
+        new (): HTMLStencilInternalStateElement;
+    };
+    interface HTMLStencilInternalStateReactiveElement extends Components.StencilInternalStateReactive, HTMLStencilElement {
+    }
+    var HTMLStencilInternalStateReactiveElement: {
+        prototype: HTMLStencilInternalStateReactiveElement;
+        new (): HTMLStencilInternalStateReactiveElement;
+    };
+    interface HTMLStencilListenEventElement extends Components.StencilListenEvent, HTMLStencilElement {
+    }
+    var HTMLStencilListenEventElement: {
+        prototype: HTMLStencilListenEventElement;
+        new (): HTMLStencilListenEventElement;
+    };
+    interface HTMLStencilObjectPropElement extends Components.StencilObjectProp, HTMLStencilElement {
+    }
+    var HTMLStencilObjectPropElement: {
+        prototype: HTMLStencilObjectPropElement;
+        new (): HTMLStencilObjectPropElement;
+    };
+    interface HTMLStencilPrivateMethodElement extends Components.StencilPrivateMethod, HTMLStencilElement {
+    }
+    var HTMLStencilPrivateMethodElement: {
+        prototype: HTMLStencilPrivateMethodElement;
+        new (): HTMLStencilPrivateMethodElement;
     };
     interface HTMLStencilPropComponentElement extends Components.StencilPropComponent, HTMLStencilElement {
     }
@@ -25,28 +124,121 @@ declare global {
         prototype: HTMLStencilPropComponentElement;
         new (): HTMLStencilPropComponentElement;
     };
+    interface HTMLStencilPropValidationElement extends Components.StencilPropValidation, HTMLStencilElement {
+    }
+    var HTMLStencilPropValidationElement: {
+        prototype: HTMLStencilPropValidationElement;
+        new (): HTMLStencilPropValidationElement;
+    };
+    interface HTMLStencilPublicMethodElement extends Components.StencilPublicMethod, HTMLStencilElement {
+    }
+    var HTMLStencilPublicMethodElement: {
+        prototype: HTMLStencilPublicMethodElement;
+        new (): HTMLStencilPublicMethodElement;
+    };
+    interface HTMLStencilRequiredPropElement extends Components.StencilRequiredProp, HTMLStencilElement {
+    }
+    var HTMLStencilRequiredPropElement: {
+        prototype: HTMLStencilRequiredPropElement;
+        new (): HTMLStencilRequiredPropElement;
+    };
+    interface HTMLStencilWatchPropElement extends Components.StencilWatchProp, HTMLStencilElement {
+    }
+    var HTMLStencilWatchPropElement: {
+        prototype: HTMLStencilWatchPropElement;
+        new (): HTMLStencilWatchPropElement;
+    };
     interface HTMLElementTagNameMap {
+        "stencil-array-prop": HTMLStencilArrayPropElement;
+        "stencil-boolean-prop": HTMLStencilBooleanPropElement;
+        "stencil-emit-event": HTMLStencilEmitEventElement;
         "stencil-first-component": HTMLStencilFirstComponentElement;
+        "stencil-internal-state": HTMLStencilInternalStateElement;
+        "stencil-internal-state-reactive": HTMLStencilInternalStateReactiveElement;
+        "stencil-listen-event": HTMLStencilListenEventElement;
+        "stencil-object-prop": HTMLStencilObjectPropElement;
+        "stencil-private-method": HTMLStencilPrivateMethodElement;
         "stencil-prop-component": HTMLStencilPropComponentElement;
+        "stencil-prop-validation": HTMLStencilPropValidationElement;
+        "stencil-public-method": HTMLStencilPublicMethodElement;
+        "stencil-required-prop": HTMLStencilRequiredPropElement;
+        "stencil-watch-prop": HTMLStencilWatchPropElement;
     }
 }
 declare namespace LocalJSX {
+    interface StencilArrayProp {
+        "users"?: string[];
+    }
+    interface StencilBooleanProp {
+        "checked"?: boolean;
+        "label"?: string;
+        "name"?: string;
+    }
+    interface StencilEmitEvent {
+        "onTimeUpdated"?: (event: StencilEmitEventCustomEvent<number>) => void;
+    }
     interface StencilFirstComponent {
+    }
+    interface StencilInternalState {
+    }
+    interface StencilInternalStateReactive {
+    }
+    interface StencilListenEvent {
+    }
+    interface StencilObjectProp {
+        "user"?: User;
+    }
+    interface StencilPrivateMethod {
     }
     interface StencilPropComponent {
         "name"?: string;
     }
+    interface StencilPropValidation {
+        "name"?: string;
+    }
+    interface StencilPublicMethod {
+    }
+    interface StencilRequiredProp {
+        "name": string;
+    }
+    interface StencilWatchProp {
+        "birthYear"?: number;
+    }
     interface IntrinsicElements {
+        "stencil-array-prop": StencilArrayProp;
+        "stencil-boolean-prop": StencilBooleanProp;
+        "stencil-emit-event": StencilEmitEvent;
         "stencil-first-component": StencilFirstComponent;
+        "stencil-internal-state": StencilInternalState;
+        "stencil-internal-state-reactive": StencilInternalStateReactive;
+        "stencil-listen-event": StencilListenEvent;
+        "stencil-object-prop": StencilObjectProp;
+        "stencil-private-method": StencilPrivateMethod;
         "stencil-prop-component": StencilPropComponent;
+        "stencil-prop-validation": StencilPropValidation;
+        "stencil-public-method": StencilPublicMethod;
+        "stencil-required-prop": StencilRequiredProp;
+        "stencil-watch-prop": StencilWatchProp;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "stencil-array-prop": LocalJSX.StencilArrayProp & JSXBase.HTMLAttributes<HTMLStencilArrayPropElement>;
+            "stencil-boolean-prop": LocalJSX.StencilBooleanProp & JSXBase.HTMLAttributes<HTMLStencilBooleanPropElement>;
+            "stencil-emit-event": LocalJSX.StencilEmitEvent & JSXBase.HTMLAttributes<HTMLStencilEmitEventElement>;
             "stencil-first-component": LocalJSX.StencilFirstComponent & JSXBase.HTMLAttributes<HTMLStencilFirstComponentElement>;
+            "stencil-internal-state": LocalJSX.StencilInternalState & JSXBase.HTMLAttributes<HTMLStencilInternalStateElement>;
+            "stencil-internal-state-reactive": LocalJSX.StencilInternalStateReactive & JSXBase.HTMLAttributes<HTMLStencilInternalStateReactiveElement>;
+            "stencil-listen-event": LocalJSX.StencilListenEvent & JSXBase.HTMLAttributes<HTMLStencilListenEventElement>;
+            "stencil-object-prop": LocalJSX.StencilObjectProp & JSXBase.HTMLAttributes<HTMLStencilObjectPropElement>;
+            "stencil-private-method": LocalJSX.StencilPrivateMethod & JSXBase.HTMLAttributes<HTMLStencilPrivateMethodElement>;
             "stencil-prop-component": LocalJSX.StencilPropComponent & JSXBase.HTMLAttributes<HTMLStencilPropComponentElement>;
+            "stencil-prop-validation": LocalJSX.StencilPropValidation & JSXBase.HTMLAttributes<HTMLStencilPropValidationElement>;
+            "stencil-public-method": LocalJSX.StencilPublicMethod & JSXBase.HTMLAttributes<HTMLStencilPublicMethodElement>;
+            "stencil-required-prop": LocalJSX.StencilRequiredProp & JSXBase.HTMLAttributes<HTMLStencilRequiredPropElement>;
+            "stencil-watch-prop": LocalJSX.StencilWatchProp & JSXBase.HTMLAttributes<HTMLStencilWatchPropElement>;
         }
     }
 }

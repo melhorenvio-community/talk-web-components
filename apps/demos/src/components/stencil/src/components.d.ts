@@ -49,6 +49,8 @@ export namespace Components {
     }
     interface StencilShadowDom {
     }
+    interface StencilStyleScoped {
+    }
     interface StencilStyleShadow {
     }
     interface StencilStyleShadowVars {
@@ -167,6 +169,12 @@ declare global {
         prototype: HTMLStencilShadowDomElement;
         new (): HTMLStencilShadowDomElement;
     };
+    interface HTMLStencilStyleScopedElement extends Components.StencilStyleScoped, HTMLStencilElement {
+    }
+    var HTMLStencilStyleScopedElement: {
+        prototype: HTMLStencilStyleScopedElement;
+        new (): HTMLStencilStyleScopedElement;
+    };
     interface HTMLStencilStyleShadowElement extends Components.StencilStyleShadow, HTMLStencilElement {
     }
     var HTMLStencilStyleShadowElement: {
@@ -207,6 +215,7 @@ declare global {
         "stencil-public-method": HTMLStencilPublicMethodElement;
         "stencil-required-prop": HTMLStencilRequiredPropElement;
         "stencil-shadow-dom": HTMLStencilShadowDomElement;
+        "stencil-style-scoped": HTMLStencilStyleScopedElement;
         "stencil-style-shadow": HTMLStencilStyleShadowElement;
         "stencil-style-shadow-vars": HTMLStencilStyleShadowVarsElement;
         "stencil-watch-multiple-prop": HTMLStencilWatchMultiplePropElement;
@@ -254,6 +263,8 @@ declare namespace LocalJSX {
     }
     interface StencilShadowDom {
     }
+    interface StencilStyleScoped {
+    }
     interface StencilStyleShadow {
     }
     interface StencilStyleShadowVars {
@@ -281,6 +292,7 @@ declare namespace LocalJSX {
         "stencil-public-method": StencilPublicMethod;
         "stencil-required-prop": StencilRequiredProp;
         "stencil-shadow-dom": StencilShadowDom;
+        "stencil-style-scoped": StencilStyleScoped;
         "stencil-style-shadow": StencilStyleShadow;
         "stencil-style-shadow-vars": StencilStyleShadowVars;
         "stencil-watch-multiple-prop": StencilWatchMultipleProp;
@@ -306,6 +318,7 @@ declare module "@stencil/core" {
             "stencil-public-method": LocalJSX.StencilPublicMethod & JSXBase.HTMLAttributes<HTMLStencilPublicMethodElement>;
             "stencil-required-prop": LocalJSX.StencilRequiredProp & JSXBase.HTMLAttributes<HTMLStencilRequiredPropElement>;
             "stencil-shadow-dom": LocalJSX.StencilShadowDom & JSXBase.HTMLAttributes<HTMLStencilShadowDomElement>;
+            "stencil-style-scoped": LocalJSX.StencilStyleScoped & JSXBase.HTMLAttributes<HTMLStencilStyleScopedElement>;
             "stencil-style-shadow": LocalJSX.StencilStyleShadow & JSXBase.HTMLAttributes<HTMLStencilStyleShadowElement>;
             "stencil-style-shadow-vars": LocalJSX.StencilStyleShadowVars & JSXBase.HTMLAttributes<HTMLStencilStyleShadowVarsElement>;
             "stencil-watch-multiple-prop": LocalJSX.StencilWatchMultipleProp & JSXBase.HTMLAttributes<HTMLStencilWatchMultiplePropElement>;

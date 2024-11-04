@@ -151,6 +151,9 @@ fillProps();
     <div class="mb-5 border border-neutral-medium">
       <stencil-style-shadow-vars />
     </div>
+    <div class="mb-5 border border-neutral-medium">
+      <stencil-style-scoped />
+    </div>
   </div>
 </template>
 

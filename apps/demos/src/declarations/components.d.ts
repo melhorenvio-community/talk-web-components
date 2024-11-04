@@ -11,6 +11,7 @@ declare module 'vue' {
     AppFooterItem: typeof import('./../components/app/AppFooter/AppFooterItem.vue')['default']
     AppHeading: typeof import('./../components/app/AppHeading/index.vue')['default']
     AppLayout: typeof import('./../components/app/AppLayout/index.vue')['default']
+    BaseLayout: typeof import('./../components/app/BaseLayout.vue')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     DemoCard: typeof import('./../components/app/DemoCard/index.vue')['default']
     IonLogoStencil: typeof import('~icons/ion/logo-stencil')['default']

@@ -18,7 +18,7 @@
       "id": "demo-03",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a passagem de props entre stencil elements"
+      "description": "Explorando a passagem de props para stencil elements"
     },
 
     {
@@ -32,81 +32,67 @@
       "id": "demo-05",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a passagem de props booleanas com valor 'truthy'"
+      "description": "Explorando a passagem de props booleanas"
     },
 
     {
       "id": "demo-06",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a passagem de props booleanas com valor 'falsy'"
+      "description": "Explorando a passagem de props do tipo 'object'"
     },
 
     {
       "id": "demo-07",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a passagem de props booleanas sem valor inicial"
+      "description": "Explorando a passagem de props do tipo 'array'"
     },
 
     {
       "id": "demo-08",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a passagem de props do tipo 'object'"
+      "description": "Explorando a validação de props"
     },
 
     {
       "id": "demo-09",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a passagem de props do tipo 'array'"
+      "description": "Explorando a utilização de métodos públicos"
     },
 
     {
       "id": "demo-10",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a validação de props"
+      "description": "Explorando a utilização de métodos privados"
     },
 
     {
       "id": "demo-11",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a utilização de métodos públicos"
+      "description": "Explorando a utilização e controle de estado interno"
     },
 
     {
       "id": "demo-12",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a utilização de métodos privados"
+      "description": "Explorando a emissão de eventos"
     },
 
     {
       "id": "demo-13",
       "category": "stencil",
       "title": "Stencil Elements",
-      "description": "Explorando a utilização e controle de estado interno"
-    },
-
-    {
-      "id": "demo-14",
-      "category": "stencil",
-      "title": "Stencil Elements",
-      "description": "Explorando a emissão de eventos"
-    },
-
-    {
-      "id": "demo-15",
-      "category": "stencil",
-      "title": "Stencil Elements",
       "description": "Explorando a escuta de eventos"
     },
 
     {
-      "id": "demo-16",
+      "id": "demo-14",
       "category": "stencil",
       "title": "Stencil Elements",
       "description": "Observando a atualização de props"

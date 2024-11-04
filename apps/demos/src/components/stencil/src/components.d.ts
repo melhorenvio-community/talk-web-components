@@ -20,6 +20,9 @@ export namespace Components {
     }
     interface StencilFirstComponent {
     }
+    interface StencilHostElement {
+        "open": boolean;
+    }
     interface StencilInternalState {
     }
     interface StencilInternalStateReactive {
@@ -43,6 +46,16 @@ export namespace Components {
     }
     interface StencilRequiredProp {
         "name": string;
+    }
+    interface StencilShadowDom {
+    }
+    interface StencilStyleShadow {
+    }
+    interface StencilStyleShadowVars {
+    }
+    interface StencilWatchMultipleProp {
+        "color": string;
+        "size": number;
     }
     interface StencilWatchProp {
         "birthYear": number;
@@ -87,6 +100,12 @@ declare global {
     var HTMLStencilFirstComponentElement: {
         prototype: HTMLStencilFirstComponentElement;
         new (): HTMLStencilFirstComponentElement;
+    };
+    interface HTMLStencilHostElementElement extends Components.StencilHostElement, HTMLStencilElement {
+    }
+    var HTMLStencilHostElementElement: {
+        prototype: HTMLStencilHostElementElement;
+        new (): HTMLStencilHostElementElement;
     };
     interface HTMLStencilInternalStateElement extends Components.StencilInternalState, HTMLStencilElement {
     }
@@ -142,6 +161,30 @@ declare global {
         prototype: HTMLStencilRequiredPropElement;
         new (): HTMLStencilRequiredPropElement;
     };
+    interface HTMLStencilShadowDomElement extends Components.StencilShadowDom, HTMLStencilElement {
+    }
+    var HTMLStencilShadowDomElement: {
+        prototype: HTMLStencilShadowDomElement;
+        new (): HTMLStencilShadowDomElement;
+    };
+    interface HTMLStencilStyleShadowElement extends Components.StencilStyleShadow, HTMLStencilElement {
+    }
+    var HTMLStencilStyleShadowElement: {
+        prototype: HTMLStencilStyleShadowElement;
+        new (): HTMLStencilStyleShadowElement;
+    };
+    interface HTMLStencilStyleShadowVarsElement extends Components.StencilStyleShadowVars, HTMLStencilElement {
+    }
+    var HTMLStencilStyleShadowVarsElement: {
+        prototype: HTMLStencilStyleShadowVarsElement;
+        new (): HTMLStencilStyleShadowVarsElement;
+    };
+    interface HTMLStencilWatchMultiplePropElement extends Components.StencilWatchMultipleProp, HTMLStencilElement {
+    }
+    var HTMLStencilWatchMultiplePropElement: {
+        prototype: HTMLStencilWatchMultiplePropElement;
+        new (): HTMLStencilWatchMultiplePropElement;
+    };
     interface HTMLStencilWatchPropElement extends Components.StencilWatchProp, HTMLStencilElement {
     }
     var HTMLStencilWatchPropElement: {
@@ -153,6 +196,7 @@ declare global {
         "stencil-boolean-prop": HTMLStencilBooleanPropElement;
         "stencil-emit-event": HTMLStencilEmitEventElement;
         "stencil-first-component": HTMLStencilFirstComponentElement;
+        "stencil-host-element": HTMLStencilHostElementElement;
         "stencil-internal-state": HTMLStencilInternalStateElement;
         "stencil-internal-state-reactive": HTMLStencilInternalStateReactiveElement;
         "stencil-listen-event": HTMLStencilListenEventElement;
@@ -162,6 +206,10 @@ declare global {
         "stencil-prop-validation": HTMLStencilPropValidationElement;
         "stencil-public-method": HTMLStencilPublicMethodElement;
         "stencil-required-prop": HTMLStencilRequiredPropElement;
+        "stencil-shadow-dom": HTMLStencilShadowDomElement;
+        "stencil-style-shadow": HTMLStencilStyleShadowElement;
+        "stencil-style-shadow-vars": HTMLStencilStyleShadowVarsElement;
+        "stencil-watch-multiple-prop": HTMLStencilWatchMultiplePropElement;
         "stencil-watch-prop": HTMLStencilWatchPropElement;
     }
 }
@@ -178,6 +226,9 @@ declare namespace LocalJSX {
         "onTimeUpdated"?: (event: StencilEmitEventCustomEvent<number>) => void;
     }
     interface StencilFirstComponent {
+    }
+    interface StencilHostElement {
+        "open"?: boolean;
     }
     interface StencilInternalState {
     }
@@ -201,6 +252,16 @@ declare namespace LocalJSX {
     interface StencilRequiredProp {
         "name": string;
     }
+    interface StencilShadowDom {
+    }
+    interface StencilStyleShadow {
+    }
+    interface StencilStyleShadowVars {
+    }
+    interface StencilWatchMultipleProp {
+        "color"?: string;
+        "size"?: number;
+    }
     interface StencilWatchProp {
         "birthYear"?: number;
     }
@@ -209,6 +270,7 @@ declare namespace LocalJSX {
         "stencil-boolean-prop": StencilBooleanProp;
         "stencil-emit-event": StencilEmitEvent;
         "stencil-first-component": StencilFirstComponent;
+        "stencil-host-element": StencilHostElement;
         "stencil-internal-state": StencilInternalState;
         "stencil-internal-state-reactive": StencilInternalStateReactive;
         "stencil-listen-event": StencilListenEvent;
@@ -218,6 +280,10 @@ declare namespace LocalJSX {
         "stencil-prop-validation": StencilPropValidation;
         "stencil-public-method": StencilPublicMethod;
         "stencil-required-prop": StencilRequiredProp;
+        "stencil-shadow-dom": StencilShadowDom;
+        "stencil-style-shadow": StencilStyleShadow;
+        "stencil-style-shadow-vars": StencilStyleShadowVars;
+        "stencil-watch-multiple-prop": StencilWatchMultipleProp;
         "stencil-watch-prop": StencilWatchProp;
     }
 }
@@ -229,6 +295,7 @@ declare module "@stencil/core" {
             "stencil-boolean-prop": LocalJSX.StencilBooleanProp & JSXBase.HTMLAttributes<HTMLStencilBooleanPropElement>;
             "stencil-emit-event": LocalJSX.StencilEmitEvent & JSXBase.HTMLAttributes<HTMLStencilEmitEventElement>;
             "stencil-first-component": LocalJSX.StencilFirstComponent & JSXBase.HTMLAttributes<HTMLStencilFirstComponentElement>;
+            "stencil-host-element": LocalJSX.StencilHostElement & JSXBase.HTMLAttributes<HTMLStencilHostElementElement>;
             "stencil-internal-state": LocalJSX.StencilInternalState & JSXBase.HTMLAttributes<HTMLStencilInternalStateElement>;
             "stencil-internal-state-reactive": LocalJSX.StencilInternalStateReactive & JSXBase.HTMLAttributes<HTMLStencilInternalStateReactiveElement>;
             "stencil-listen-event": LocalJSX.StencilListenEvent & JSXBase.HTMLAttributes<HTMLStencilListenEventElement>;
@@ -238,6 +305,10 @@ declare module "@stencil/core" {
             "stencil-prop-validation": LocalJSX.StencilPropValidation & JSXBase.HTMLAttributes<HTMLStencilPropValidationElement>;
             "stencil-public-method": LocalJSX.StencilPublicMethod & JSXBase.HTMLAttributes<HTMLStencilPublicMethodElement>;
             "stencil-required-prop": LocalJSX.StencilRequiredProp & JSXBase.HTMLAttributes<HTMLStencilRequiredPropElement>;
+            "stencil-shadow-dom": LocalJSX.StencilShadowDom & JSXBase.HTMLAttributes<HTMLStencilShadowDomElement>;
+            "stencil-style-shadow": LocalJSX.StencilStyleShadow & JSXBase.HTMLAttributes<HTMLStencilStyleShadowElement>;
+            "stencil-style-shadow-vars": LocalJSX.StencilStyleShadowVars & JSXBase.HTMLAttributes<HTMLStencilStyleShadowVarsElement>;
+            "stencil-watch-multiple-prop": LocalJSX.StencilWatchMultipleProp & JSXBase.HTMLAttributes<HTMLStencilWatchMultiplePropElement>;
             "stencil-watch-prop": LocalJSX.StencilWatchProp & JSXBase.HTMLAttributes<HTMLStencilWatchPropElement>;
         }
     }

@@ -1,16 +1,11 @@
-<script setup>
-const objectPropRef = ref(null);
-const arrayPropRef = ref(null);
+<script setup lang="ts">
+async function fillProps() {
+  await customElements.whenDefined("stencil-object-prop");
+  await customElements.whenDefined("stencil-array-prop");
 
-watchEffect(() => {
-  if (objectPropRef.value) {
-    objectPropRef.value.user = { name: "Juca", age: 37 };
-  }
-
-  if (arrayPropRef.value) {
-    arrayPropRef.value.users = ["Juca", "Carlo", "Battisti"];
-  }
-});
+  document.querySelector("stencil-object-prop").user = { name: "Juca", age: 37 };
+  document.querySelector("stencil-array-prop").users = ["Juca", "Carlo", "Battisti"];
+}
 
 async function generateNumber() {
   await customElements.whenDefined("stencil-public-method");
@@ -29,13 +24,26 @@ async function attachEvent() {
   });
 }
 
-attachEvent();
-
 async function calculateAge() {
   await customElements.whenDefined("stencil-watch-prop");
   const watchProp = document.querySelector("#watch-prop").value;
   document.querySelector("stencil-watch-prop").birthYear = watchProp;
 }
+
+async function changeMultipleProp(propName: string) {
+  await customElements.whenDefined("stencil-watch-multiple-prop");
+  const watchProp = document.querySelector(`#watch-${propName}`).value;
+  document.querySelector("stencil-watch-multiple-prop")[propName] = watchProp;
+}
+
+async function toggleHost() {
+  await customElements.whenDefined("stencil-host-element");
+  const currentValue = document.querySelector("stencil-host-element").open;
+  document.querySelector("stencil-host-element").open = !currentValue;
+}
+
+attachEvent();
+fillProps();
 </script>
 
 <template>
@@ -66,10 +74,10 @@ async function calculateAge() {
       <stencil-boolean-prop name="juca" label="This is checked" checked="False" />
     </div>
     <div class="mb-5 border border-neutral-medium">
-      <stencil-object-prop ref="objectPropRef" />
+      <stencil-object-prop />
     </div>
     <div class="mb-5 border border-neutral-medium">
-      <stencil-array-prop ref="arrayPropRef" />
+      <stencil-array-prop />
     </div>
     <div class="mb-5 border border-neutral-medium">
       <stencil-prop-validation name="Juca" />
@@ -113,5 +121,41 @@ async function calculateAge() {
       </div>
       <stencil-watch-prop />
     </div>
+    <div class="mb-5 border border-neutral-medium">
+      <div class="flex gap-5">
+        <input id="watch-color" placeholder="Informe a cor" type="color" name="watch-color">
+        <button @click="changeMultipleProp('color')">
+          Modificar cor
+        </button>
+      </div>
+      <div class="flex gap-5">
+        <input id="watch-size" placeholder="Informe o tamanho" type="number" name="watch-size">
+        <button @click="changeMultipleProp('size')">
+          Modificar tamanho
+        </button>
+      </div>
+      <stencil-watch-multiple-prop />
+    </div>
+    <div class="mb-5 border border-neutral-medium">
+      <button @click="toggleHost">
+        Abrir/fechar conteúdo
+      </button>
+      <stencil-host-element />
+    </div>
+    <div class="mb-5 border border-neutral-medium">
+      <stencil-shadow-dom />
+    </div>
+    <div class="mb-5 border border-neutral-medium">
+      <stencil-style-shadow />
+    </div>
+    <div class="mb-5 border border-neutral-medium">
+      <stencil-style-shadow-vars />
+    </div>
   </div>
 </template>
+
+<style>
+stencil-style-shadow-vars {
+  --title-color: red;
+}
+</style>

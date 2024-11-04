@@ -1,9 +1,7 @@
 <template>
-  <div class="w-full h-full max-w-[800px] py-16 m-auto">
-    <RouterView v-slot="{ Component }">
-      <component :is="Component" />
-    </RouterView>
-  </div>
+  <RouterView v-slot="{ Component }">
+    <component :is="Component" />
+  </RouterView>
 
   <app-footer title="Leonardo Adamoli e Diego Rocha | Front-end Developers - @melhorenvio">
     <app-footer-item

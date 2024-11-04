@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col gap-16">
+  <main class="w-full h-full max-w-[800px] py-16 m-auto flex flex-col gap-16">
     <header v-if="$slots.heading" class="flex flex-col gap-6 items-center text-center">
       <slot name="heading" />
     </header>

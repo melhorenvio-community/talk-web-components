@@ -1,12 +1,9 @@
 <template>
-  <RouterView v-slot="{ Component }">
-    <transition
-      name="fade"
-      appear
-    >
+  <div class="w-full h-full max-w-[800px] py-16 m-auto">
+    <RouterView v-slot="{ Component }">
       <component :is="Component" />
-    </transition>
-  </RouterView>
+    </RouterView>
+  </div>
 
   <app-footer title="Leonardo Adamoli e Diego Rocha | Front-end Developers - @melhorenvio">
     <app-footer-item

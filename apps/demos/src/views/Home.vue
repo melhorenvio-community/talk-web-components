@@ -22,24 +22,29 @@ import content from "@/static/content.json";
     </template>
 
     <template #content>
-      <demo-card
-        v-for="({ category, title, description }, index) in content.examples"
-        :key="description"
-      >
-        <template #icon>
-          <logos-webcomponents v-if="category === ECategoryTypes.webComponents" />
+      <div class="grid grid-cols-3 gap-5">
+        <router-link
+          v-for="({ id, category, title, description }, index) in content.examples"
+          :key="description"
+          :to="{ name: `${category}-${id}` }"
+        >
+          <demo-card>
+            <template #icon>
+              <logos-webcomponents v-if="category === ECategoryTypes.webComponents" />
 
-          <ion-logo-stencil v-else />
-        </template>
+              <ion-logo-stencil v-else />
+            </template>
 
-        <template #title>
-          {{ index + 1 }}. {{ title }}
-        </template>
+            <template #title>
+              {{ index + 1 }}. {{ title }}
+            </template>
 
-        <template #description>
-          {{ description }}.
-        </template>
-      </demo-card>
+            <template #description>
+              {{ description }}.
+            </template>
+          </demo-card>
+        </router-link>
+      </div>
     </template>
   </app-layout>
 </template>

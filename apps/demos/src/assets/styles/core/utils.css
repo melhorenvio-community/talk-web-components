@@ -1,0 +1,37 @@
+@layer utilities {
+  .border-draw {
+    @apply
+      relative
+      before:box-border
+      before:border-2
+      before:border-solid
+      before:border-transparent
+      before:content-['']
+      before:absolute
+      before:top-0
+      before:left-0
+      before:w-0
+      before:h-0
+      after:box-border
+      after:border-2
+      after:border-solid
+      after:border-transparent
+      after:content-['']
+      after:absolute
+      after:bottom-0
+      after:right-0
+      after:w-0
+      after:h-0
+      hover:before:w-full
+      hover:before:h-full
+      hover:after:w-full
+      hover:after:h-full
+      hover:before:border-t-primary-light
+      hover:before:border-r-primary-light
+      hover:before:[transition:width_0.25s_ease-out,height_0.25s_ease-out_0.25s]
+      hover:after:border-b-primary-light
+      hover:after:border-l-primary-light
+      hover:after:[transition:border-color_0s_ease-out_0.5s,width_0.25s_ease-out_0.5s,height_0.25s_ease-out_0.75s]
+    ;
+  }
+}

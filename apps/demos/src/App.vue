@@ -1,6 +1,12 @@
 <template>
   <RouterView v-slot="{ Component }">
-    <component :is="Component" />
+    <transition
+      name="fade"
+      mode="out-in"
+      class="relative"
+    >
+      <component :is="Component" />
+    </transition>
   </RouterView>
 
   <app-footer title="Leonardo Adamoli e Diego Rocha | Front-end Developers - @melhorenvio">

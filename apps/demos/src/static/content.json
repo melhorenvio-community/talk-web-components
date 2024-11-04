@@ -1,0 +1,27 @@
+{
+  "examples": [
+    {
+      "category": "webcomponents",
+      "title": "Custom Elements",
+      "description": "Utilizando API nativa para construir nosso primeiro exemplo"
+    },
+
+    {
+      "category": "webcomponents",
+      "title": "Custom Elements",
+      "description": "Exemplificando a passagem de props entre custom elements"
+    },
+
+    {
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Utilizando o Stencil.js para construir Web Components"
+    },
+
+    {
+      "category": "stencil",
+      "title": "Stencil Elements",
+      "description": "Explorando a passagem de props entre stencil elements"
+    }
+  ]
+}

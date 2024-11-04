@@ -1,3 +1,3 @@
 <template>
-  <base-layout />
+  <app-layout />
 </template>

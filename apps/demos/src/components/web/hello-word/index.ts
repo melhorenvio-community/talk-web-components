@@ -11,19 +11,15 @@
       root.innerHTML = `
         <style>
           .hello-world {
-            color: crimson;
+            color: #FFFFFF;
             margin: 0;
           }
         </style>
 
-        ${this.content}
+        <b>Olá, eu sou um Web Component nativo, rodando dentro de uma aplicação Vue.js! 🎉</b>
       `;
 
       shadow.appendChild(root);
-    }
-
-    get content() {
-      return this.getAttribute("content") ?? "";
     }
   }
 

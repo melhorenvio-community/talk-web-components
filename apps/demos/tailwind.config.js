@@ -11,7 +11,11 @@ export default {
     "!./src/**/node_modules/**/*.{html,js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "green-wc": "#CDE12B",
+      },
+    },
   },
   plugins: [],
 };

@@ -17,10 +17,17 @@ const { title, description } = defineProps<IDemoPageProps>();
     </template>
 
     <template #content>
-      <p>Esta demo aborda como contruir o nosso primeiro e mais simples <i>Web Component</i> utilizando as API nativas.</p>
+      <div class="flex flex-col gap-6">
+        <p>Esta demo aborda como contruir o nosso primeiro e mais simples <i>Web Component</i> utilizando as API nativas.</p>
 
-      <div class="my-7 p-5 bg-primary-light rounded-lg text-center">
+        <!-- Web Component -->
         <web-hello-world />
+        <!-- Web Component -->
+
+        <p>
+          No exemplo acima, estamos definindo um <i>Custom Element</i> denominado <code class="code">web-hello-world</code>
+          para iniciar nossa exploração nas APIs disponíveis, partindo de exemplos básicos até outros mais complexos.
+        </p>
       </div>
     </template>
   </app-layout>

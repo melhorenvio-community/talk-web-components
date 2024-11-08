@@ -31,7 +31,16 @@
       hover:before:[transition:width_0.25s_ease-out,height_0.25s_ease-out_0.25s]
       hover:after:border-b-primary-light
       hover:after:border-l-primary-light
-      hover:after:[transition:border-color_0s_ease-out_0.5s,width_0.25s_ease-out_0.5s,height_0.25s_ease-out_0.75s]
-    ;
+      hover:after:[transition:border-color_0s_ease-out_0.5s,width_0.25s_ease-out_0.5s,height_0.25s_ease-out_0.75s];
+  }
+
+  .code {
+    @apply
+      bg-neutral-dark
+      text-green-wc
+      text-sm
+      px-3
+      py-2
+      rounded;
   }
 }

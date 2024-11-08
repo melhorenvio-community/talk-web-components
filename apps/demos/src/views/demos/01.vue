@@ -1,17 +1,25 @@
 <script lang="ts" setup>
-const route = useRoute();
+import type { IDemoPageProps } from "./types";
+
+const { title, description } = defineProps<IDemoPageProps>();
 </script>
 
 <template>
-  <app-layout>
+  <app-layout alignment="left">
     <template #heading>
       <app-heading>
-        Hello from {{ route.name }}
+        {{ title }}
+
+        <template #subheading>
+          <p>{{ description }}.</p>
+        </template>
       </app-heading>
     </template>
 
     <template #content>
-      <p>This is a demo page.</p>
+      <p>
+        Esta demo aborda como contruir o nosso primeiro e mais simples <i>Web Component</i> utilizando as API nativas.
+      </p>
     </template>
   </app-layout>
 </template>

@@ -1,10 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-});
+import type { IAppFooterProps } from "./types";
+
+const { title } = defineProps<IAppFooterProps>();
 </script>
 
 <template>

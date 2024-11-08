@@ -7,7 +7,7 @@ import content from "@/static/content.json";
 <template>
   <app-layout>
     <template #heading>
-      <logos-webcomponents class="w-[120px] h-auto" />
+      <logos-webcomponents class="w-[120px] h-auto m-auto" />
 
       <app-heading>
         Uma introdução abrangente aos <i>Web Components</i><br> e suas possibilidades
@@ -22,29 +22,30 @@ import content from "@/static/content.json";
     </template>
 
     <template #content>
-      <div class="grid grid-cols-3 gap-5">
-        <router-link
+      <ul class="grid grid-cols-3 gap-5">
+        <li
           v-for="({ id, category, title, description }, index) in content.examples"
           :key="description"
-          :to="{ name: `${category}-${id}` }"
         >
-          <demo-card>
-            <template #icon>
-              <logos-webcomponents v-if="category === ECategoryTypes.webComponents" />
+          <router-link :to="{ name: `${category}-${id}` }">
+            <demo-card>
+              <template #icon>
+                <logos-webcomponents v-if="category === ECategoryTypes.webComponents" />
 
-              <ion-logo-stencil v-else />
-            </template>
+                <ion-logo-stencil v-else />
+              </template>
 
-            <template #title>
-              {{ index + 1 }}. {{ title }}
-            </template>
+              <template #title>
+                {{ index + 1 }}. {{ title }}
+              </template>
 
-            <template #description>
-              {{ description }}.
-            </template>
-          </demo-card>
-        </router-link>
-      </div>
+              <template #description>
+                {{ description }}.
+              </template>
+            </demo-card>
+          </router-link>
+        </li>
+      </ul>
     </template>
   </app-layout>
 </template>

@@ -1,9 +1,7 @@
 <script lang="ts" setup>
 import type { IAppHeadingProps } from "./types";
 
-withDefaults(defineProps<IAppHeadingProps>(), {
-  level: "h1",
-});
+const { level = "h1" } = defineProps<IAppHeadingProps>();
 </script>
 
 <template>

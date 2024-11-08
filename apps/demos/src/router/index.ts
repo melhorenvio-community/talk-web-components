@@ -4,10 +4,14 @@ import Stencil from "@/views/Stencil.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 
-const demos = content.examples.map((example) => ({
+const demos = content.examples.map((example, index) => ({
   path: `/demos/${example.id}`,
   name: `${example.category}-${example.id}`,
   component: () => import(`@/views/demos/${example.id}.vue`),
+  props: {
+    title: `${index + 1}. ${example.title}`,
+    description: example.description,
+  },
 }));
 
 const router = createRouter({

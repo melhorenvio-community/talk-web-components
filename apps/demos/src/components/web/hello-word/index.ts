@@ -1,8 +1,6 @@
 (function () {
   class HelloWorld extends HTMLElement {
-    constructor() {
-      super();
-
+    connectedCallback() {
       const shadow = this.attachShadow({ mode: "open" });
 
       const root = document.createElement("div");
